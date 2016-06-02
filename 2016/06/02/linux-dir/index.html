@@ -10,6 +10,15 @@
 
     <!--Description-->
     
+        <meta name="description" content="1.cd , pwdcd- //返回上一次目录
+2.创建目录mkdir ld //可多创建多个目录
+rmdir ld //不能删除非空目录
+
+mkdir -p ld/xx   //连同父文件夹一起创建
+mkdir -p rhca/{xx,yy,zz}
+
+rm -rf 文件         //强制删">
+    
 
     <!--Author-->
     
@@ -18,7 +27,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="artist"/>
+        <meta property="og:title" content="linux_dir"/>
     
 
     <!--Open Graph Description-->
@@ -31,7 +40,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
     
 
     <!--Page Cover-->
@@ -44,7 +53,7 @@
 
     <!-- Title -->
     
-    <title>artist</title>
+    <title>linux_dir - artist</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
@@ -127,66 +136,97 @@
 
     <!-- Main Content -->
     <!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
 <header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>artist</h1>
-                    <hr class="small">
-                    <span class="subheading"></span>
+                <div class="post-heading">
+                    <h1>linux_dir</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2016-06-02
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            
-                <div class="post-preview">
-    <a href="/2016/06/02/linux-dir/">
-        <h2 class="post-title">
-            linux_dir
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2016-06-02
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2016/06/01/hello-world/">
-        <h2 class="post-title">
-            Hello World
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2016-06-01
-    </p>
-</div>
-<hr>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/linux/">#linux</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
             
 
-            <ul class="pager">
-    
-    
-</ul>
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h2 id="1-cd-pwd"><a href="#1-cd-pwd" class="headerlink" title="1.cd , pwd"></a>1.cd , pwd</h2><pre><code>cd- //返回上一次目录
+</code></pre><h2 id="2-创建目录"><a href="#2-创建目录" class="headerlink" title="2.创建目录"></a>2.创建目录</h2><pre><code>mkdir ld //可多创建多个目录
+rmdir ld //不能删除非空目录
+
+mkdir -p ld/xx   //连同父文件夹一起创建
+mkdir -p rhca/{xx,yy,zz}
+
+rm -rf 文件         //强制删除，文件和文件夹
+</code></pre><h2 id="3-路径-PATH"><a href="#3-路径-PATH" class="headerlink" title="3.路径$PATH"></a>3.路径$PATH</h2><pre><code>echo $PATH;
+加到路径里
+PATH=&apos;&apos;
+</code></pre><h2 id="4-ls"><a href="#4-ls" class="headerlink" title="4.ls"></a>4.ls</h2><pre><code>-l //里面的信息
+-d //自身
+-h //人类更适合查看
+-a //所有文件
+-1 //1行一个
+-s //大小
+</code></pre><h2 id="5-cp-复制文件"><a href="#5-cp-复制文件" class="headerlink" title="5.cp //复制文件"></a>5.cp //复制文件</h2><pre><code>cp   [选项]     路径1     路径2
+
+cp   [选项]     路径1     路径2  -p  //属性信息
+
+cp   -a  //都复制过去了
+
+cp   -u   //哪一个更新保留那个
+
+cp   快捷方式    //复制的文件 
+    -d          //复制的快捷方式
+</code></pre><h2 id="6-mv-重命名，剪切"><a href="#6-mv-重命名，剪切" class="headerlink" title="6.mv  //重命名，剪切"></a>6.mv  //重命名，剪切</h2><h2 id="7-rm-rf-文件"><a href="#7-rm-rf-文件" class="headerlink" title="7.rm -rf 文件"></a>7.rm -rf 文件</h2><pre><code>//很猛，全部删除
+</code></pre><h2 id="8-basename-dirname"><a href="#8-basename-dirname" class="headerlink" title="8.basename dirname"></a>8.basename dirname</h2>
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
         </div>
     </div>
-</div>
-
-
+</article>
 
     <!-- Footer -->
     <hr />
